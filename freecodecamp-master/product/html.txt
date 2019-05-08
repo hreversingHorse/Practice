@@ -1,0 +1,106 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<div id="grid-container">
+  <header id="header">
+    <img src="https://s3.amazonaws.com/freecodecamp/original_trombones.png" alt="company logo" id="header-img" width=150px height=40px;/>
+    <nav id="nav-bar">
+      <a class="nav-link-1 nav-link" href="#headline">Features</a>
+      <a class="nav-link-2 nav-link" href="#vid">How It Works</a>
+      <a class="nav-link-3 nav-link" href="#pric">Pricing</a>
+    </nav>
+  </header>
+  <div class="start">
+    <h1 class="start-headline">Handcrafted, home-made masterpieces</h1>
+
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input type="email" id="email" placeholder="Enter your email adress" target="_blank" name="email" required>
+      <input type="submit" name="submit" id="submit" value="GET STARTED">
+    </form>
+  </div>
+  <div class="headline" id="headline">
+    <div class="headline-single headline-1">
+      <div class="headline-par-div">
+        <p class="par1">Premium Materials</p>
+        <p class="par2">Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>  
+      </div>
+      <div class="headline-img">
+        <img src="https://img.icons8.com/color/48/000000/iron-bars.png" class="img">
+      </div>
+    </div>
+    <div class="headline-single headline-2" >
+      <div class="headline-par-div">
+        <p class="par1">Fast Shipping</p>
+        <p class="par2">We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+      </div>
+      <div class="headline-img">
+        <img src="https://img.icons8.com/ios/48/000000/truck-filled.png" class="img">
+      </div>
+    </div>
+    <div class="headline-single headline-3">
+      <div class="headline-par-div">
+        <p class="par1">Quality Assurance</p>
+        <p class="par2">For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+      </div>
+      <div class="headline-img">
+        <img src="https://img.icons8.com/ios/48/000000/warranty-card-filled.png" class="img">
+      </div>
+    </div>
+  </div>
+  <div class="video" id="vid">
+    <iframe width="420" height="315"
+    src="https://www.youtube.com/embed/tgbNymZ7vqY" id="video">
+    </iframe>
+  </div>
+  <div class="pricing-main" id="pric">
+    <div class="pricing-single">
+      <div class="pricing-single-top">
+        <p id="pricing-par">TENOR TROMBONE</p>
+      </div>
+      <div class="pricing-single-bottom">
+        <h2>$600</h2>
+        <p class="pricing-par">Lorem ipsum.</p>
+        <p class="pricing-par">Lorem ipsum.</p>
+        <p class="pricing-par">Lorem ipsum dolor.</p>
+        <p class="pricing-par">Lorem ipsum.</p>
+        <input type="button" class="pricing-button" value="SELECT">
+      </div>
+    </div>
+    <div class="pricing-single">
+      <div class="pricing-single-top">
+        <p id="pricing-par">BASS TROMBONE</p>
+      </div>
+      <div class="pricing-single-bottom">
+        <h2>$900</h2>
+        <p class="pricing-par">Lorem ipsum.</p>
+        <p class="pricing-par">Lorem ipsum.</p>
+        <p class="pricing-par">Lorem ipsum dolor.</p>
+        <p class="pricing-par">Lorem ipsum.</p>
+        <input type="button" class="pricing-button" value="SELECT">
+      </div>
+    </div>
+    <div class="pricing-single">
+      <div class="pricing-single-top">
+        <p id="pricing-par">VALVE TROMBONE</p>
+      </div>
+      <div class="pricing-single-bottom">
+        <h2>$1200</h2>
+        <p class="pricing-par">Plays similar to a Trumpet</p>
+        <p class="pricing-par">Great for Jazz Bands</p>
+        <p class="pricing-par">Lorem ipsum dolor.</p>
+        <p class="pricing-par">Lorem ipsum.</p>
+        <input type="button" class="pricing-button" value="SELECT">
+      </div>
+    </div>
+  </div>
+  <div class="contact-main">
+    <div class="contact-ptc">
+      <div class="privacy">Privacy</div>
+      <div class="terms">Terms</div>
+      <div class="contact">Contact</div>
+    </div>
+    <div class="copyright">
+      <p>Copyright 2016, Original Trombones</p>
+    </div>
+  </div>
+    
+</div>

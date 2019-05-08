@@ -1,0 +1,5 @@
+szymki\dev\Controller\DemoController.class
+szymki\dev\config\WebConfig.class
+szymki\dev\service\DemoService.class
+szymki\dev\config\WebAppInitializer.class
+szymki\dev\service\DemoServiceImpl.class
