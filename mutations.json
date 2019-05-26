@@ -1,0 +1,1 @@
+{"index.js":"function mutation(arr) {\n  let scndArrayLetters = arr[1].split(\"\");\n  let flag = true;\n  for (let i = 0; i<scndArrayLetters.length; i++){\n    if (!arr[0].toLowerCase().includes(scndArrayLetters[i].toLowerCase())){\n      flag = false;\n    }\n  }\n\n  return flag;\n}\n\nmutation([\"hello\", \"hey\"]);"}
