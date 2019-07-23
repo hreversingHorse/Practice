@@ -1,5 +1,5 @@
 import axios from 'axios'
-const BASE_URL = 'http://localhost:3001/notes'
+const BASE_URL = '/api/notes'
 
 const getAll = () => {
     return axios
@@ -18,13 +18,5 @@ const update = (id, newObject) => {
         .put(BASE_URL+'/'+id, newObject)
         .then(response => response.data)
 }
-
-// export default {
-//     getAll: getAll,
-//     create: create,
-//     update: update
-// }
-// Becouse the exported variable names are exactly the same as the function names
-// we can simplyfy it
 
 export default {getAll,create,update}

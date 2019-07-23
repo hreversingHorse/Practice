@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react'
-import axios from 'axios'
 import Note from './components/Note'
 import noteService from './servises/notes'
+import Notification from './components/Notification'
 
 const App = () => {
   const [notes, setNotes] = useState([]) 
   const [newNote, setNewNote] = useState('')
   const [showAll, setShowAll] = useState(true)
+  const [errorMessage, setErrorMessage] = useState('some error happend...')
 
   const hook = () => {
     noteService
@@ -30,7 +31,7 @@ const App = () => {
         important: Math.random() > 0.5
     }
 
-    noteService.create(newNote).then(createdNote => {
+    noteService.create(noteObject).then(createdNote => {
       setNotes(notes.concat(createdNote))
       setNewNote('')
     })
@@ -61,10 +62,13 @@ const App = () => {
         }))
       })
       .catch(error => {
-        alert(
-          'note of intrest doesnt exist'
+        setErrorMessage(
+          'Note' + note.content + 'was already removed from server'
         )
-        setNotes()
+        setTimeout(() => {
+          setErrorMessage(null)
+        },5000)
+        setNotes(notes.filter(n => n.id !== id))
       })
 
   }
@@ -80,6 +84,8 @@ const App = () => {
   return (
     <div>
         <h1>Notes</h1>
+
+
         <div>
             <button onClick={() => setShowAll(!showAll)}>
                 show {showAll ? 'important' : 'all'}
